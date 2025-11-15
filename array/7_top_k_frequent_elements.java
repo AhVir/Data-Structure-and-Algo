@@ -13,7 +13,7 @@ class Solution {
             }
         }
 
-        // Priority Queue (Max Heap)
+        // Priority Queue (Min Heap)
         Queue<Integer> heap = new PriorityQueue<>((a, b) -> freq.get(a) - freq.get(b));
 
         for(int x:freq.keySet()){
