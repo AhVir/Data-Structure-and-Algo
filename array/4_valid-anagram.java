@@ -3,6 +3,8 @@ class Solution {
         int[] freqS = new int[26];
         int[] freqT = new int[26];
 
+        if(s.length() != t.length()) return false;
+
         for(char c:s.toCharArray()){
             int temp = c-'a';
             freqS[temp]++;
